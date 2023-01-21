@@ -18,4 +18,4 @@ jobs:
     # Run our deployment command
     - name: Deploying the static website to gh-pages
       run: |
-        npm ci
+        npm install
