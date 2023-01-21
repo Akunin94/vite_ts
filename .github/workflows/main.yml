@@ -17,6 +17,12 @@ jobs:
 
     # Run our deployment command
     - name: Deploying the static website to gh-pages
+      env: 
+        MY_EMAIL: akunin94@gmail.com
+        MY_NAME: Akunin94
       run: |
         npm install
+        git config --global user.email $MY_EMAIL
+        git config --global user.name $MY_NAME
+        git remote set-url origin https://$MY_NAME:${{ secrets.GH_SECRET }}@github.com/Akunin94/vite_ts.git
         npm run deploy
