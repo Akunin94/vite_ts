@@ -19,3 +19,4 @@ jobs:
     - name: Deploying the static website to gh-pages
       run: |
         npm install
+        npm run deploy
