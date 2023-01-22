@@ -14,5 +14,5 @@ jobs:
         run: |
           npm ci
           git config --global user.email "akunin94@gmail.com"
-          git config --global user.name "Akunin94"
+          git config --global user.name "Davron Usmonov"
           npm run deploy
